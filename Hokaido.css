@@ -1,14 +1,131 @@
+body {
+    font-family: 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fcfcfe;
+    color: #222;
+    line-height: 1.7;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.2em;
+    border-bottom: 3px solid #0c5782;
+    color: #0c5782;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #244b5a;
+    margin-bottom: 1em;
+}
+
+.spots {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .spot {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px;
+    background: #eef7fb;
+    border-radius: 10px;
+    border: 1px solid #d0e5f2;
+    box-shadow: 0 2px 8px rgba(0, 100, 140, 0.04);
+    padding: 16px 16px;
+    gap: 20px;
+    transition: box-shadow .2s, transform .2s;
+}
+
+.spot:hover {
+    box-shadow: 0 4px 16px rgba(0, 70, 120, 0.14);
+    transform: translateY(-2px) scale(1.02);
 }
 
 .spot img {
-    width: 300px;
-    margin-right: 20px;
+    width: 220px;
+    max-width: 45vw;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 160px;
+    box-shadow: 0 1px 6px rgba(0, 40, 80, 0.05);
+    flex-shrink: 0;
 }
 
 .spot-details {
-    max-width: 400px;
+    flex: 1;
+    max-width: 540px;
+}
+
+.spot-details h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #145779;
+}
+
+.spot-details p {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 0.9em;
+    15: 27 margin-top: 2em;
+    padding: 1em 0 2em 0;
+}
+
+@media (max-width: 700px) {
+
+    header,
+    main,
+    footer {
+        padding: 0.5em;
+    }
+
+    .spot {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .spot img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .spot-details {
+        max-width: 100%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1.15em;
+    }
+}
+
+body {
+    background:
+        linear-gradient(120deg, rgba(233, 245, 255, 0.87) 0%, rgba(255, 251, 233, 0.78) 100%),
+        url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
 }
