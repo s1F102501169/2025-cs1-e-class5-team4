@@ -5,6 +5,7 @@
 
 h1.main {
     text-align: center;
+    font-family: SimSun;
 }
 
 .content {
@@ -12,6 +13,6 @@ h1.main {
     margin: 10px 0 10px 0;
 }
 
-strong {
-    color: #fffacd;
+.title {
+    font-family: SimSun;
 }
