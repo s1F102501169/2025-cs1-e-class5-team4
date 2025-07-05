@@ -16,3 +16,10 @@ h1.main {
 .title {
     font-family: SimSun;
 }
+
+
+
+
+.border {
+    border-image: url('https://game-materials.com/wp-content/uploads/2025/06/underwater4-2-1536x864.jpg') 100 / 50px / 10px round;
+}
